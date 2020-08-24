@@ -97,9 +97,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
             $login = $_SESSION['login'];
 
 
-            $user = 'u20402';
-            $pass = '9698907';
-            $db = new PDO('mysql:host=localhost;dbname=u20402', $user, $pass);
+            $user = 'u20421';
+            $pass = '8387410';
+            $db = new PDO('mysql:host=localhost;dbname=u20421', $user, $pass);
 
             try {
                 foreach($db->query('SELECT * FROM app1') as $row){
@@ -277,9 +277,9 @@ else {
 
         else {
 
-            $user = 'u20402';
-            $pass = '9698907';
-            $db = new PDO('mysql:host=localhost;dbname=u20402', $user, $pass,
+            $user = 'u20421';
+            $pass = '8387410';
+            $db = new PDO('mysql:host=localhost;dbname=u20421', $user, $pass,
                 array(PDO::ATTR_PERSISTENT => true));
             extract($_POST);
 
